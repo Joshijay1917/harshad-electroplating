@@ -401,8 +401,6 @@ function showLiveAlert(message, type = 'success') {
       );
     }
 
-    if(filteredAndSortedOrders) {
-
         // Apply sorting
         filteredAndSortedOrders.sort((a, b) => {
       let aValue, bValue;
@@ -473,7 +471,7 @@ function showLiveAlert(message, type = 'success') {
     });
     renderPagination(totalPages, filteredAndSortedOrders.length); // Render pagination controls
     updateSummaryCards(); // Update dashboard summary
-  }
+  
 }
 
   /**
