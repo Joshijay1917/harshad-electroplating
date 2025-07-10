@@ -354,9 +354,7 @@ function showLiveAlert(message, type = 'success') {
   function renderOrders() {
     const tableBody = document.getElementById('ordersTableBody');
     tableBody.innerHTML = ''; // Clear existing rows
-    let filteredAndSortedOrders
-
-    if(orders){
+    
         let filteredAndSortedOrders = [...orders]; // Create a mutable copy
         
         // Apply search filter
@@ -377,7 +375,7 @@ function showLiveAlert(message, type = 'success') {
         )
     );
 }
-}
+
 
     // Apply status filter
     const statusFilter = document.getElementById('statusFilter').value;
